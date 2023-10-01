@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --main-color: #dea114;
+    --secondary-color: black;
+    --box-shadow: 0 0 7px 0 var(--secondary-color);
+    --main-color-hover: #dea114;
+  }
+  body {
+    font-size: 25px;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #dea114;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: var(--main-color-hover);
+  }
+  
+  .formLogin {
+    background: #318080;
+    padding: 25px;
+    border-radius: 11px;
+    min-width: 500px;
+  }
+  .link{
+    color: #dea114
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 5rem;
+    min-height: 100vh;
+  }
+  
+  .formLogin > h2 {
+    margin-bottom: 28px;
+    color: #dea114;
+    text-align: center;
+  }
+  h2{
+    color: #dea114;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .formLogin > div {
+    margin-bottom: 15px;
+  }
+  
+  .formLogin > div > div {
+    position: relative;
+  }
+  
+  .formLogin input[type="text"],
+  .formLogin input[type="email"],
+  .formLogin input[type="password"] {
+    background: #f5f1f1;
+    border-radius: 25px;
+    outline: 0;
+    border: 1px solid var(--secondary-color);
+    padding: 15px 32px;
+    width: 100%;
+    font-size: 1.5 rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  .formLogin input[type="text"]:focus,
+  .formLogin input[type="email"]:focus,
+  .formLogin input[type="password"]:focus {
+    border: 3px solid var(--main-color);
+  }
+  
+  .unCompleted > input {
+    border: 1px solid #ff0000 !important;
+  }
+  
+  .completed > input {
+    border: 1px solid #42ba96 !important;
+    position: relative;
+  }
+  
+  .unCompleted::after {
+    content: "";
+    background-image: url(../img/close.svg);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+  
+  .completed::after {
+    content: "";
+    background-image: url(../img/check.svg);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+  
+  
+  .formLogin ::placeholder {
+    color: #bfbbbb;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .formLogin > div span.error {
+    height: 10px;
+    text-align: left;
+    margin-top: 3px;
+    width: fit-content;
+    font-size: 1rem;
+    color: red;
+    line-height: 1px;
+    padding: 6px 2px;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.175);
+    display: inline-block;
+  }
+  
+  .sweet_loading {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  
+  }
+  
+  .formLogin button[type="submit"] {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 50%;
+    border-radius: 25px;
+    outline: 0;
+    border: none;
+    color: black;
+    padding: 10px;
+    margin: 15px auto;
+    background: #dea114;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .formLogin button[type="submit"]:hover {
+    background: #cf9409;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 568px) {
+    .formLogin {
+      min-width: 300px;
+      padding: 16px;
+    }
+    .formLogin input[type="text"],
+    .formLoginQ input[type="email"],
+    .formLogin input[type="password"] {
+      padding: 10px 32px;
+    }
+  }
+  
