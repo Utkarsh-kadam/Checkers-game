@@ -149,7 +149,8 @@ const Board = ({ game }) => {
 
   return (
     <div>
-      <h1>Current player: {gameState.currentPlayer}</h1>
+      <h3>Checkers Game</h3>
+      <h5>Current player: {gameState.currentPlayer}</h5>
       <div
         className="board"
         onMouseDown={windowHandleMouseDown}
@@ -170,8 +171,7 @@ const Board = ({ game }) => {
           ));
         })}
       </div>
-      <button onClick={handleButtonClick}>RESET</button>
-      <button onClick={handlePlayerSwitch}>{gameState.currentPlayer}</button>
+      <button className="reset-button" onClick={handleButtonClick}>Reset</button>
     </div>
   );
 };
