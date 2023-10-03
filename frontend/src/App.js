@@ -3,8 +3,7 @@ import './App.css';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import Auth from './components/authentication/Auth';
 import Registration from './components/authentication/RegistrationComp';
-import CheckersGame from './components/CheckersGame';
-import GApp from './components/game/App';
+import GApp from './components/game/GApp';
 
 function App() {
   return (
@@ -14,8 +13,6 @@ function App() {
                     <Route path="/" element={<Auth/>} />
                     <Route path="/register" element={<Registration/>} />
                     <Route path="/game" element={<GApp/>} />
-
-
                 </Routes>
             </BrowserRouter>
     </div>
