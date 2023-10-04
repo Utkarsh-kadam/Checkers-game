@@ -52,7 +52,7 @@ function Registration() {
     try {
       // Make a POST request to your server's register endpoint
 
-      const response = await fetch("http://localhost:3000/auth/register", requestOptions);
+      const response = await fetch("https://checkers-backend.onrender.com/auth/register", requestOptions);
 
 
       if (response.status === 201) {
