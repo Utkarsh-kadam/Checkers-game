@@ -95,6 +95,8 @@ function Login() {
             )}
         <span style={{ color: "black", textAlign: "center", display: "inline-block", width: "100%" }}>
          <h5>Don't have a account?</h5>  <Link className={styles.link} to="/Register">Create account</Link>
+         <br/>
+         <Link className={styles.link} to="/game">Skip</Link>
         </span>
       </div>
 
