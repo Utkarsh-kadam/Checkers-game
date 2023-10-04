@@ -72,7 +72,7 @@ function Registration() {
   };
 
   return (
-    <div>
+    <div className="game-container">
      
     <div className={styles.container}>
     <form className={styles.formLogin} onSubmit={handleRegistration} >

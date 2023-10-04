@@ -66,7 +66,7 @@ function Login() {
   };
 
   return (
-    <div>  
+    <div className='game-container'>  
      
 
     <div className={styles.container}>

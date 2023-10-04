@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   color: black;
-  background-color: rgb(231, 208, 208);
+  background-color: rgb(222, 233, 233);
   justify-content: center;
   margin: auto;
 }
@@ -22,6 +22,20 @@
   padding: 20px; /* Add padding for spacing */
 }
 
+.button
+{
+  display: block;
+  background-color: #dea114;
+  margin: auto;
+  padding: 5px;
+  border: none;
+  border-radius: 25px;
+}
+
+h1{
+  color: #dea114;
+}
+
 @media screen and (max-width: 768px) {
   .game-container {
    min-width: 100vw; /* Adjust the maximum width as needed */
@@ -29,5 +43,9 @@
   .checkerboard-container{
     border: none;
     margin: 0;
+  }
+
+  p{
+    font-size: 1.2rem;
   }
 }
